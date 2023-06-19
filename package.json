@@ -1,0 +1,38 @@
+{
+  "name": "online-design-ui",
+  "private": false,
+  "version": "1.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/pui.umd.cjs",
+  "module": "./dist/pui.js",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/pui.js",
+      "require": "./dist/pui.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vue-tsc && vite build"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.7",
+    "@types/node": "^20.3.1",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "tslib": "^2.5.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2",
+    "vue": "^3.3.2"
+  }
+}
