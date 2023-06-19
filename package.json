@@ -2,6 +2,12 @@
   "name": "online-design-ui",
   "private": false,
   "version": "1.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/phm-front/online-design-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phm-front/online-design-ui"
+  },
   "type": "module",
   "files": [
     "dist"
@@ -16,7 +22,8 @@
     }
   },
   "scripts": {
-    "build": "vue-tsc && vite build"
+    "build": "vue-tsc && vite build",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "lodash-es": "^4.17.21"

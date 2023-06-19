@@ -30,8 +30,8 @@ export default defineConfig({
         compilerOptions: {
           declaration: true,
           declarationDir: resolve(__dirname, 'dist/types'),
-          emitDeclarationOnly: true,
-          allowImportingTsExtensions: true,
+          emitDeclarationOnly: true, // 只生成 .d.ts 不生成 .js，生成js交给vite
+          noEmit: false // noEmit 默认为true，什么都不生成
         }
       })]
     },
