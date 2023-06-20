@@ -23,7 +23,8 @@
   },
   "scripts": {
     "build": "vue-tsc && vite build",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "lodash-es": "^4.17.21"
@@ -32,14 +33,15 @@
     "vue": "^3.3.2"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
     "@types/lodash-es": "^4.17.7",
     "@types/node": "^20.3.1",
-    "@rollup/plugin-typescript": "^11.1.1",
     "@vitejs/plugin-vue": "^4.1.0",
+    "husky": "^8.0.3",
     "tslib": "^2.5.3",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
-    "vue-tsc": "^1.4.2",
-    "vue": "^3.3.2"
+    "vue": "^3.3.2",
+    "vue-tsc": "^1.4.2"
   }
 }
